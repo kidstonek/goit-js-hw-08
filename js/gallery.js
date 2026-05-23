@@ -104,7 +104,7 @@ myImages.addEventListener('click', e => {
 
 function myModal(myUrl) {
   const instance = basicLightbox.create(`
-    <img src=${myUrl} width="1112" height="640">
+    <img src="${myUrl}" width="1112" height="640">
 `)
 
 instance.show()
