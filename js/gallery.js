@@ -70,7 +70,7 @@ const gallerySelector = document.querySelector('.gallery');
 function image({preview, original, description}) {
   return `
      <li class="gallery-item">
-    <a class="gallery-link" href="${original}"></a>
+    <a class="gallery-link" href="${original}">
     <img
       class="gallery-image"
       width="360"
@@ -94,6 +94,7 @@ gallerySelector.innerHTML = markup;
 
 const myImages = document.querySelector('ul.gallery')
 myImages.addEventListener('click', e => {
+  e.preventDefault();
   if (e.target.nodeName !== 'IMG') {
     return;
   }
@@ -108,5 +109,3 @@ function myModal(myUrl) {
 
 instance.show()
 }
-
-    // 
