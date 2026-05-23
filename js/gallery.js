@@ -70,7 +70,7 @@ const gallerySelector = document.querySelector('.gallery');
 function image({preview, original, description}) {
   return `
      <li class="gallery-item">
-
+    <a class="gallery-link" href="${original}"></a>
     <img
       class="gallery-image"
       width="360"
@@ -109,4 +109,4 @@ function myModal(myUrl) {
 instance.show()
 }
 
-    // <a class="gallery-link" href="${original}"></a>
+    // 
